@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-padding-top: 3rem;
+  scroll-behavior: smooth;
+}
+  
+img, svg{
+    width: 100%;
+    fill: white;
+  }
+
+a, ul, ol {
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+body{
+    background-color: #f6f8fc;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+@media screen and (min-width: 992px) {
+    .container{
+        max-width: 992px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.button-top img{
+    width: 3.5rem;
+    position: fixed;
+    right: 5rem;
+    bottom: 5rem;
+    opacity: .8;
+}
+
+.button-top a{
+    position: sticky;
+}
+
+.button-top img:hover{
+    transition: all .9s ease-in-out;
+    opacity: .9;
+    animation: wave 1.5s ease-in-out infinite alternate;
+}
+@keyframes wave {
+    0%{
+        scale: 1;
+    }50%{
+        scale: 1.05;
+    }70%{
+        scale: 1.08;
+    }100%{
+        scale: 1;
+    }
+}
+
+#loadMoreButton:hover{
+    scale: 1.05;
+    transition: all .9s ease-in-out;
+    opacity: .8;
+}
+
+.tittle a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    color: #333;
+}
+
+.tittle a:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    color: #333;
+}
