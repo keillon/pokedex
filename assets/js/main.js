@@ -48,14 +48,6 @@ loadMoreButton.addEventListener('click', () => {
   }
 })
 
-pokemonList.addEventListener('click', (pokemon) =>{
-  overlay.classList.toggle('open--overlay')
-  
-  pokemon.map(pokemon =>
-    `<span class='name__overlay'>${pokemon.overlay}</span>`
-  )
-
-})
 
 
 

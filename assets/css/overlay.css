@@ -10,7 +10,7 @@
     z-index: 998;
     border-radius: 1rem;
     width: 400px;
-    display: none;
+    /* display: none; */
 }
 
 
@@ -22,7 +22,7 @@
 }
 
 .open--overlay{
-    display: flex;
+    /* display: flex; */
 }
 
 .pokemon__ol{
