@@ -18,6 +18,9 @@
   <body>
     <section id="overlay" class="overlay">
       <div class="content-details">
+        <div class="close">
+          <img title="Close Info" class="imgClose" src="assets/img/close-circle-outline.svg" alt="Close info">
+        </div>
         <ol id="pokemonStatus" class="pokemon__ol">
           <li class="li__list--overlay">
             <div class="text__overlay">
@@ -29,20 +32,18 @@
                 <li class="type__overlay"></li>
                 <li class="type__overlay"></li>
               </ol>
+              <img class="img__overlay" src="" alt="" />
+
             </div>
-            <img
-              class="img__overlay"
-              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
-              alt="bulbasaur"
-            />
+           
             <div class="line"></div>
             <div class="status__overlay">
               <ol class="ol__status">
                 <span class="about">About</span>
-                <li class="li__status">Species:<span></span></li>
-                <li class="li__status">Height: <span></span></li>
-                <li class="li__status">Weight: <span></span></li>
-                <li class="li__status">Abilities: <span></span></li>
+                <li class="Species__status">Species:<span></span></li>
+                <li class="Height__status">Height: <span></span></li>
+                <li class="Weight__status">Weight: <span></span></li>
+                <li class="Abilities__status">Abilities: <span></span></li>
               </ol>
             </div>
           </li>
@@ -56,19 +57,20 @@
         <a href="/">
           <img
             width="48"
-            height="48"
+            height="48" title="Recarregar página"
             src="https://img.icons8.com/color/48/pokeball--v1.png"
             alt="pokeball--v1"
           />
-          <h1>Pokedex</h1>
+          <h1 title="Recarregar página">Pokedex</h1>
         </a>
       </div>
       <div class="pokemon__list">
         <ol id="pokemonList" class="ol--list">
+          
           <!-- podekemon list -->
         </ol>
         <div class="pagination">
-          <button id="loadMoreButton" type="button">Load More..</button>
+          <button id="loadMoreButton" title="Carregar mais pokémons.." type="button">Load More..</button>
         </div>
       </div>
     </section>
@@ -78,7 +80,7 @@
 
     <div class="button-top">
       <a href="#topo"
-        ><img
+        ><img title="Ir ao topo"
           src="https://cdn.dribbble.com/assets/icon-backtotop-v2-9f3ef55e9788120b9b7764af9e386b31599c413703860e124c692db30efad7f2.png"
           alt=""
       /></a>

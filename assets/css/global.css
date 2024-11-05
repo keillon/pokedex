@@ -32,6 +32,7 @@ button {
 
 body{
     background-color: #f6f8fc;
+    scroll-behavior: smooth;
 }
 
 .container{
