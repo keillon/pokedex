@@ -14,9 +14,17 @@
   z-index: 998;
 }
 
+@media (width < 768px) {
+  .content-details{
+    width: 400px;
+    height: 72vh;
+  }
+
+}
+
 @media (width < 578px) {
   .content-details{
-    width: 380px;
+    width: 330px;
     height: 72vh;
   }
 
@@ -45,6 +53,8 @@
   padding: 20px;
   border-radius: 8px;
   position: relative;
+  min-width: 320px;
+  height: 600px;
 }
 
 .pokemon__ol{
@@ -56,7 +66,7 @@
 
 .text__overlay{
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,7 +84,7 @@
     display: flex;
     justify-content: left;
     gap: .9rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     filter: brightness(1.1);
 }
 
@@ -86,7 +96,7 @@
 
 .li__list--overlay img{
     width: 100%;
-    height: 10rem;
+    height: 8rem;
     margin-top: 2rem;
     display: flex;
     align-items: center;
@@ -98,13 +108,14 @@
     color: #fff;
     font-weight: 600;
     font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 /* status */
 
 .line::before{
     content: '';
-    width: 350px;
+    width: 300px;
     height:4px;
     background: #fff;
     backdrop-filter: blur(50px);
@@ -117,16 +128,15 @@
 
 .status__overlay{
     background-color: rgba(255, 255, 255, 0.548);
-    width: 100%;
+    max-width: 100%;
     padding-inline: 2rem;
     border-radius: 1rem 1rem 0 0;
     line-height: 1.6rem;
     border: 1px solid #00000044;
-    margin: 3rem 15rem 0 0;
+    margin: 3rem 1rem;
     padding: 2rem 0;
-    color: #333;
-    margin-bottom: 1.9rem;
-    
+    color: #333; 
+    height: 100%;
 }
 
 .status__overlay span{
@@ -144,9 +154,10 @@
 .ol__status{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     justify-content: center;
     margin: 0 auto;
     font-weight: 800;
+    padding: 0 1rem;
 }
 

@@ -115,6 +115,7 @@ overlay.addEventListener('click', (event) => {
   }
   
 });
+
 // Fecha o overlay ao clicar fora dele
 overlay.addEventListener('click', (event) => {
   if (event.target === overlay) {
